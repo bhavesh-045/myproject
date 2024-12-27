@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+     <style>
+        body {
+            background-image: url(contactbackground.jpg);
+            background-size: cover;
+        }
+        h1 {
+            text-align: center;
+            color: #060606;
+        }
+        fieldset {
+            width: 40%; 
+            height: 600px;
+            margin: 0 auto; 
+            background-color: rgb(237, 225, 209);
+            box-shadow: 3px 3px 20px 10px rgb(224, 101, 101) inset;
+            padding: 4%;
+            background-size: cover;
+            color: rgb(9, 9, 9);
+        }
+
+        form {
+            max-width: 700px;
+            margin: 30px auto;
+        }
+        input, textarea {
+            width: 100%;
+            padding: 12px 15px;
+            margin: 10px 0;
+            border: 1px solid #bdc3c7;
+            border-radius: 10px;
+            font-size: 1.1em;
+            transition: border-color 0.3s ease;
+        }
+        .contact-info {
+            text-align: center;
+            font-size: 150%;
+        }
+        input[type="submit"] {
+            background-color: blue;
+        }
+        input[type="submit"]:hover {
+            background-color:chartreuse;
+            transition-duration: 1.6s;
+        }
+
+
+     </style>
+
+</head>
+<body>
+    
+    <fieldset>
+        <h1>Contact Us</h1>
+        <form>
+       <label>Name:</label>
+            <input type="text" name="name" placeholder="Your Name" required> <br> </br>
+
+            <label>Email:</label>
+            <input type="email" name="email" placeholder="Your Email" required> <br> </br>
+
+            <label>Message:</label>
+            <textarea name="message" rows="5" placeholder="Your Message" required></textarea> <br> </br>
+        
+            <input type="submit" value="Send Message"> <br> </br>
+        
+        </form>
+        
+        <div class="contact-info">
+            <p>Or contact us directly at: <a href="mailto:guptabhavesh304@gmail.com">guptabhavesh304@gmail.com</a></p>
+        </div>
+    </fieldset>
+</body>
+</html>
